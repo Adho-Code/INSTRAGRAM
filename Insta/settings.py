@@ -37,8 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'instagramy',
+    'tinymce',
+    'bootstrap4',
     'bootstrap3',
+    'bootstrapform',
+    'friendship',
+    'columns',
 ]
 
 MIDDLEWARE = [
@@ -49,8 +55,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+       'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+COMMENTS_APP = 'threadedcomments'
 ROOT_URLCONF = 'Insta.urls'
 
 TEMPLATES = [
@@ -78,9 +86,9 @@ WSGI_APPLICATION = 'Insta.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'instagram'),
+        'NAME': 'instagram',
         'USER': 'adho',
-        'PASSWORD': 'chukula'
+        'PASSWORD': 'chukula13'
     }
 }
 
@@ -122,3 +130,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+
+]
+STATIC_URL = '/staticfiles/'
+STATIC_ROOT ='/staticfiles/'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = [
+    os.path.join(BASE_DIR, "media"),
+]
