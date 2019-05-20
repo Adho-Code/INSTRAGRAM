@@ -4,7 +4,7 @@
 {% block content %}
 {% load columns %}
 <script>
-    alert('{{ message }}');
+    // alert('{{ message }}');
 </script>
 <div class='container-fluid'>
 
@@ -43,9 +43,9 @@
 
 
 <form  action="{%url 'welcome' image_id=image.id%}" method="post">
-	 {% csrf_token %}
+	{% csrf_token %}
 
-    {% bootstrap_form form layout='inline' %}
+    {% bootstrap_form form%}
 
     <input type="submit" value="Comment">
   </form>

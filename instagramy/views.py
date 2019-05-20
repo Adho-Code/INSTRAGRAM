@@ -37,7 +37,7 @@ def home(request,image_id=None):
 	else:
 			form = NewCommentForm()
 
-	return render_to_response('home.html',locals())
+	
 	return render(request,'home.html',locals())
 
 
