@@ -41,19 +41,18 @@ or just use this
 
 
 ## BDD
-| Behavior                                       | Result                                                                                       |
-|------------------------------------------------|----------------------------------------------------------------------------------------------|
-| User loads the page                            | All favorite images are displayed                                                            |
-| User clicks on an image that interests him/her | The image is enlarged in a modal and its Description and a button for copping image is shown |
-| User clicks on the copy link button            | The image url is copied and an alert is displayed                                            |
-| User searches for an image category            | User is re-directed to the searched term with relevant images displayed                      |
-| User clicks on location                        | A dropdown menu is displayed                                                                 |
 
-
+| Behavior                                  | Input                                    | Output                                            |
+|-------------------------------------------|------------------------------------------|---------------------------------------------------|
+| User loads the page                       | Fill in the sign form                    | The User can log in to the application            |
+| User can add a profile picture            | The image can be upload                  | The image is set as profile picture and displayed |
+| User can post and image of his/her choice | The Image is displayed on the applicaton | The image is uploaded to the application          |
+| Users Post images                         | Any other user might like the image      | Then one can follow the post                      |
+| Any other user can like the post          | Can comment on it                        | The comments can be displayed                     |
 ## Live link
 Use this link to see the web-page
 
-https://chuugallery.herokuapp.com/
+
 
 ## Contact Information
 * Email-(adhoadhigal@gmail.com)
