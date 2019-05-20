@@ -1,11 +1,11 @@
-## Gallery-Application
-This is Photo Gallery built in python that allows users to view their favorite Photos.
+## Instagram App
+This is App that is built in python that allows users to view their favorite Photos and add post on it also comment on them.
 
 ## Author name
 Adho Galgallo
 
 ## Project Description
-This Gallery-application allows users to view Photos depending on the photo's location and category of the users favorite photos.
+This is App that is built in python that allows users to view their favorite Photos and add post on it also comment on them.
 
 ## Technologies Used
 Python 3.6
